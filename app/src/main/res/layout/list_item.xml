@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="70dp"
-    android:orientation="vertical"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:padding="10dp"
-    android:background="#0000FF"
     android:id="@+id/listItemUI">
-        <TextView
-            android:id="@+id/namaBrgUI"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:text="Nama Barang"
-            android:textColor="#ffffff"
-            >
-        </TextView>
-        <TextView
-            android:id="@+id/hargaBrgUI"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:text="Harga Barang"
-            android:textColor="#ffffff"
-            >
-        </TextView>
 
-</LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/cardview_light_background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/namaBrgUI"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:text="Nama Barang"
+                            android:textColor="@color/black"
+                            >
+                        </TextView>
+                        <TextView
+                            android:id="@+id/hargaBrgUI"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:text="Harga Barang"
+                            android:textColor="@color/black"
+                            >
+                        </TextView>
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

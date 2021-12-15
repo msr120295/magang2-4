@@ -9,8 +9,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.mochsalmanr.magang.R;
 
 import java.util.List;
@@ -37,12 +39,16 @@ public class RecyclerActivityAdapter extends RecyclerView.Adapter<RecyclerActivi
         holder.harga.setText(String.valueOf(item.getHargaBrg()));
 
         //ToDo #1 toast masih belum tampil jadi freeze app
-        holder.listItem.setOnClickListener(view -> {
-            String a = item.getNamaBrg();
-            String b = String.valueOf(item.getHargaBrg());
-            String c = String.format("Nama : %s dan Harga %s .", a, b);
+        holder.cvUtama.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String a = item.getNamaBrg();
+                String b = String.valueOf(item.getHargaBrg());
+                String c = String.format("Nama : %s dan Harga %s .", a, b);
 
-            Toast.makeText(context, c, Toast.LENGTH_SHORT).show();
+                Snackbar.make(view, a + b, Snackbar.LENGTH_LONG).show();
+//                Toast.makeText(context, "Sudah di klik", Toast.LENGTH_SHORT).show();
+            }
         });
     }
 
@@ -53,12 +59,12 @@ public class RecyclerActivityAdapter extends RecyclerView.Adapter<RecyclerActivi
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public TextView nama, harga;
-        LinearLayout listItem;
+        public CardView cvUtama;
         public ViewHolder(View itemView) {
             super(itemView);
             this.nama = (TextView) itemView.findViewById(R.id.namaBrgUI);
             this.harga = (TextView) itemView.findViewById(R.id.hargaBrgUI);
-            this.listItem = itemView.findViewById(R.id.listItemUI);
+            this.cvUtama = itemView.findViewById(R.id.cvMain);
         }
     }
 }
