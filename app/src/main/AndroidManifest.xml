@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Magang">
         <activity
+            android:name=".d2.learnrecyclerview.RecyclerActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
