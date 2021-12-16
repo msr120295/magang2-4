@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="15dp">
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnRecycler"
-        android:text="RecyclerView"
-        >
-    </Button>
+    tools:context=".d2.learnfragment.SecondActivity"
+    android:padding="10dp">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/frameContainer"
+        android:layout_alignParentTop="true">
+    </FrameLayout>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btnToFragment"
-        android:text="Fragment"
+        android:text="Back To Main"
+        android:textSize="20sp"
+        android:layout_below="@+id/frameContainer"
         android:layout_alignParentBottom="true"
-        >
+        android:id="@+id/buttonToMain">
     </Button>
 
 </RelativeLayout>
