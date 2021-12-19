@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Magang">
         <activity
-            android:name=".d2.learnfragment.SecondActivity"
+            android:name=".task_one.learnfragment.SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".d2.learnrecyclerview.RecyclerActivity"
+            android:name=".task_one.learnrecyclerview.RecyclerActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

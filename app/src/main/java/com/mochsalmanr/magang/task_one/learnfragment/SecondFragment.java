@@ -1,4 +1,4 @@
-package com.mochsalmanr.magang.d2.learnfragment;
+package com.mochsalmanr.magang.task_one.learnfragment;
 
 import android.os.Bundle;
 
@@ -10,8 +10,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 import com.mochsalmanr.magang.R;
 
 /**

@@ -1,4 +1,4 @@
-package com.mochsalmanr.magang.d2.learnrecyclerview;
+package com.mochsalmanr.magang.task_one.learnrecyclerview;
 
 public class Produk {
     public String namaBrg;

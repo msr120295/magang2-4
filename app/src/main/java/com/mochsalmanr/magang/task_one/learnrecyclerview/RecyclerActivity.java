@@ -1,8 +1,7 @@
-package com.mochsalmanr.magang.d2.learnrecyclerview;
+package com.mochsalmanr.magang.task_one.learnrecyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 

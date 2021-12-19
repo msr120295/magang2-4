@@ -1,4 +1,4 @@
-package com.mochsalmanr.magang.d2.learnfragment;
+package com.mochsalmanr.magang.task_one.learnfragment;
 
 import android.os.Bundle;
 
